@@ -56,18 +56,19 @@ public class AllOps{
 	}
 	void charTest(char x, char y){
 		//Arimetic operators all work
-		x = char(x * y); //Because it promotes it to int. Need to cast back down.
-		x = char (x/y);
-		x = char (x + y);
-		x = char (x - y);
-		x = char (x % y);
+		x = (char)(x * y); //Because it promotes it to int. Need to cast back down.
+		x = (char) (x/y);
+		x = (char) (x + y);
+		x = (char) (x - y);
+		x = (char) (x % y);
 		x++;
 		x--; 
 		x = (char)+y;//Urnary plus
 		x = (char)-y;
 		//Relations and logical
 		f(x > y);
-		f(x >= u);
+		f(x >= y);
+
 		f(x < y);
 		f(x <= y);
 		f(x == y);
@@ -84,9 +85,85 @@ public class AllOps{
 		x = (char)(x >> 1);
 		x = (char)(x >>> 1);
 		//CompoundAssignment
-		x = (char)(x <<= 1);
-		x = (char)(x >>= 1);
-		x = (char)(x >>>= 1);
-		
+		x += y;
+		x -= y;
+		x /= y;
+		x %= y;
+		x <<= y;
+		x >>= y;
+		x >>>=y;
+		x &= y;
+		x ^= y;
+		x |= y;
+		//Casting:
+		//! boolean b1 = (boolean)x;
+		byte b = (byte)x;
+		short s = (short)x;
+		int i = (int)x;
+		long l = (long)x;
+		float f = (float)x;
+		double d = (double)x;
 	}
+	void byteTet(byte x, byte y){
+		//Arimetic operators:
+		x = (byte)(x*y);
+		x = (byte)(x / y);
+		x = (byte) (x % y);
+		x = (byte)(x + y);
+		x = (byte)(x-y);
+		x++; 
+		x--;
+		x = (byte)+y;
+		x = (byte)-y;
+		//Relational and logical;
+		f(x > y);
+		f(x >= y);
+		f(x < y);
+		f(x <= y);
+		f(x == y);
+		f(x != y);
+		//f(x && y);
+		//f(x || y);
+		//! (f(!x);
+		//Bitwise operators;
+		x = (byte)~y;
+		x = (byte)(x & y);
+		x = (byte)(x | y);
+		x = (byte)(x ^ y);
+		x = (byte)(x << y);
+		x = (byte)(x >> y);
+		x = (byte) (x >>> y);
+		//Compound Assignment
+		x += y;
+		x -= y;
+		x *= y;
+		x /= y;
+		x %= y;
+		x &= y;
+		x |= y;
+		x ^= y;
+		x <<= y;
+		x >>= y;
+		x >>>= y;
+		//Casting:
+		//! boolean b1 = (boolean)x;
+		char c = (char)x;
+		short s = (short)x;
+		int i = (int)x;
+		long l = (long)x;
+		float f = (float)x;
+		double d = (double)x;
+	}
+	void shortTest(short x, short y){
+	//This is the similar to byte, short and int
+	//And long
+	}
+	void floatTest(float x, float y){
+	//With Floats you cannnot do bitwise operators or logical operators.
+	}
+	void doubleTest(double x, double y){
+	//Double is the same as float.
+	//Cannot do bitwise operators or logical operators
+	}
+	
 }

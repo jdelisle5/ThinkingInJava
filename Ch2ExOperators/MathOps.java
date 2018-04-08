@@ -40,9 +40,7 @@ public class MathOps{
 		print("v / w: " + u);
 		u = v * w;
 		print("v * w: " + u);
-		//Note there is no mod for Float because, well...decimals lol
-		//The following also works for char;
-		//byte, short, int, long, and double
+		//Note there is a mod for Float.
 		u += v;
 		print("u += v: " + u);
 		u -= v;
