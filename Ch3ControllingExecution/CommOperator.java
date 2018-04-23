@@ -1,0 +1,12 @@
+//: control/CommonOperator.java
+//It allows you to create and assing mutliple 
+//Variable inside a for loop.
+
+public class CommaOperator {
+	public static void main(String args){
+		for(int i = 1, j = i + 10; i < 5; i++, j = i * 2){
+			System.outprintln("i = " + i + " j " + j);
+		}
+	}
+}
+
