@@ -20,7 +20,6 @@ public class StringEquals{
 	public static void main(String[] args){
 		StringEquals se1 = new StringEquals();
 		String s = new String();
-		int x = 2;
 		s = "Joseph is a man";
 		String s0 = new String();
 		s0 = "JoAnne";
